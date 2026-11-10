@@ -112,6 +112,26 @@ def sapxeptheoTEN():
 def sapxeptheoMA():
     return sorted(DSSV,key=lambda x:x["Mã"])
 
+def main():
+    thuchien=True
+    while thuchien:
+        chon=input("1. Nhập danh sách sv \n"
+                   "2. Hiển thị danh sách sv \n"
+                   "3. Tìm kiếm sv \n"
+                   "4. Xoá sv \n"
+                   "5. Cập nhật sv\n"
+                   "6. sắp xếp sv theo tên \n"
+                   "7. Sắp xê theo mã sv \n"
+                   "8. Sắp xếp theo ĐTB \n"
+                   "9. Nhập 0 để thoát")
+        if chon=="1":
+            global sosv #biến toàn cục
+            sosv=int(input("Số lượng sv: "))
+            nhapds()
+        if chon == "2":
+            inds()
+        if chon == "1":
+
 #In DS
 nhapds()
 inds()
@@ -127,7 +147,7 @@ themsinhvien()
 print("Danh sách sinh viên sau khi thêm: ")
 inds()
 
-masv = input("nhập mã sinh viên cần sửa: ")
+masv=input("Nhập mã sinh viên cần sửa: ")
 capnhatsv(masv)
 print("Danh sách sinh viên sau khi sửa: ")
 inds()
