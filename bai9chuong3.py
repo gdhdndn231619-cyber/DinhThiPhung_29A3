@@ -123,9 +123,11 @@ print("Danh sách sv sau khi sắp xếp theo Tên:")
 DSSV=sapxeptheoMA()
 print("Danh sách sv sau khi sắp xếp theo Mã:")
 
+themsinhvien()
+print("Danh sách sv sau khi thêm: ")
+
 masv = input("nhập mã sinh viên cần sửa: ")
 capnhatsv(masv)
-
 print("Danh sách sinh viên sau khi sửa: ")
 inds()
 
