@@ -116,6 +116,13 @@ def sapxeptheoMA():
 nhapds()
 inds()
 
+DSSV=sapxeptheoDTB()
+print("Danh sách sv sau khi sắp xếp theo ĐTB:")
+DSSV=sapxeptheoTEN()
+print("Danh sách sv sau khi sắp xếp theo Tên:")
+DSSV=sapxeptheoMA()
+print("Danh sách sv sau khi sắp xếp theo Mã:")
+
 masv = input("nhập mã sinh viên cần sửa: ")
 capnhatsv(masv)
 
